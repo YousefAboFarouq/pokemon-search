@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Favorites</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Favorite Pokémons</h1>
+  </header>
+  <form style="justify-content: center;">
+    <button id="sortByName" type="button">Sort by Name</button>
+    <button id="sortById" type="button">Sort by ID</button>
+    <button id="backToSearch" type="button">Back to Search</button>
+    <button id="downloadBtn" type="button">Download JSON</button>
+  </form>
+  <div id="favoritesList"></div>
+  <script src="storage.js"></script>
+  <script src="favorites.js"></script>
+</body>
+</html>

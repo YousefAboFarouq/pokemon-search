@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img class="header-img" src="images.jpg" alt="Pokemon Banner">
+    <h1>Pokémons World</h1>
+  </header>
+  <form id="searchForm">
+    <label>Pokemon Type:
+      <select id="typeSelect">
+        <option value="">All</option>
+      </select>
+    </label>
+    <label>Ability:
+      <select id="abilitySelect">
+        <option value="">All</option>
+      </select>
+    </label>
+    <label>ID:
+      <input type="number" id="idInput" min="1" placeholder="ID">
+    </label>
+    <button type="submit">Search</button>
+    <button type="button" id="toFavorites">Go to Favorites</button>
+  </form>
+  <div id="loader">Loading...</div>
+  <div id="errorMsg"></div>
+  <div id="results"></div>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
